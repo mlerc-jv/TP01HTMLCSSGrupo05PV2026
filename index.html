@@ -2,47 +2,59 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link href="./assets/css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        h2{
+            letter-spacing:1px;
+        }
+    </style>
     <title>Inicio</title>
 </head>
 <body>
-
-<header>
-    <h1>Gestión de Proyectos Educativos</h1>
-    <p>Bienvenidos a la plataforma</p>
+<header class="header">
+    <div class="texto">
+        <h1>Gestión de Proyectos Educativos</h1>
+        <p>Bienvenidos a la plataforma "Proyectos Educativos", en esta podrás visualizar tus tareas,</p>
+        <p>proyectos en curso y terminados. Podrás comunicarte con profesores y compañeros</p>
+    </div>
+    <img src="./img/virtual-class.png" alt="logo" class="logo">
 </header>
 
-<nav>
+<nav class="navbar">
     <a href="index.html">Inicio</a>
     <a href="proyectos.html">Proyectos</a>
     <a href="perfil.html">Perfil</a>
     <a href="tareas.html">Tareas</a>
 </nav>
 
-
 <main>
+<section class="estadisticas">
+    <h2 style="font-weight:bold;">Estadísticas</h2>
+    <div class="tarjetas">
+        <article class="proyectos">
+            <img src="./img/homework.png" alt="proyecto" class="icono">
+            <h3>Proyectos</h3>
+            <p>5 proyectos activos</p>
+        </article>
 
-<section>
-    <h2>Estadísticas</h2>
+        <article class="tareas">
+            <img src="./img/todo.png" alt="tarea" class="icono">
+            <h3>Tareas</h3>
+            <p>3 pendientes hoy</p>
+        </article>
 
-    <article>
-        <h3>Proyectos</h3>
-        <p>5 proyectos activos</p>
-    </article>
-
-    <article>
-        <h3>Tareas</h3>
-        <p>3 pendientes hoy</p>
-    </article>
-
-    <article>
-        <h3>Mensajes</h3>
-        <p>2 sin leer</p>
-    </article>
-
+        <article class="mensajes">
+            <img src="./img/email.png" alt="mensaje" class="icono">
+            <h3>Mensajes</h3>
+            <p>2 sin leer</p>
+        </article>
+    </div>
 </section>
 
-<section>
-    <h2>Novedades</h2>
+<section class="novedades">
+    <img src="./img/problem.png" alt="importante" class="impo">
+    <h2>NOVEDADES</h2>
     <ul>
         <li>Nuevo proyecto de Matemáticas</li>
         <li>Se subió un trabajo de Biología</li>
@@ -50,7 +62,6 @@
         <li>Mensaje nuevo del docente</li>
     </ul>
 </section>
-
 </main>
 
 <footer>

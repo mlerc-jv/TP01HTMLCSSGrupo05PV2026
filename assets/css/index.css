@@ -1,0 +1,156 @@
+:root{
+    --rosa-claro:#fff7fa;
+    --rosa:#ff85a2;
+    --rosa-suave:#ffeef2;
+    --gris:#333333;
+}
+
+body {
+    margin:0;
+    font-family:'Oswald', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color:var(--rosa-claro);
+    color: var(--gris);
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(255,247,250,0.7),
+        rgba(255,182,193,0.6)),
+        url(../img/blanca.jpg);
+    padding:30px;
+}
+
+.header h1{
+    margin:20px;
+    text-align:left;
+}
+
+.logo{
+    width:100px;
+}
+
+.navbar{
+    justify-content:center;
+    display:flex;
+    gap:25px;
+    margin:20px;
+}
+
+.navbar a{
+    text-align:center;
+    text-decoration:none;
+    color:#d63384;
+    padding:8px 12px;
+    transition:0.5s;
+    font-size:20px;
+    border-radius:10px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.5);
+}
+
+.navbar a:hover{
+    background-color:var(--rosa);
+    color:#ffffff;
+}
+
+.navbar a:focus{
+    outline:2px solid var(--rosa);
+}
+
+main{
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.estadisticas{
+    background-color:var(--rosa-suave);
+    display:block;
+    width:fit-content;
+    margin:20px auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.5);
+    text-align:center;
+}
+
+.estadisticas h2{
+    font-size:50px;
+    margin-bottom:5px;
+    margin-top:10px;
+}
+
+.tarjetas{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    font-size:20px;
+}
+
+.proyectos{
+    width:170px;
+    margin:30px;
+}
+
+.tareas{
+    width:170px;
+    margin:30px;
+}
+
+.mensajes{
+    width:170px;
+    margin:30px;
+}
+
+h3{
+    background-color:var(--rosa);
+    color:#ffffff;
+    border-radius:10px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.5);
+}
+
+h3:active{
+    transform:scale(0.95);
+}
+
+.icono{
+    width:60px;
+}
+
+.impo{
+    width:100px;
+    margin-bottom:5px;
+}
+
+.novedades{
+    margin:40px;
+    padding:20px 20px;
+    background-color:var(--rosa-suave);
+    text-align:center;
+    list-style-position:inside;
+}
+
+.novedades h2{
+    margin:5px 0;
+    font-size:30px;
+}
+
+.novedades ul{
+    font-size:20px;
+    margin:5px 0px;
+    padding:0px;
+}
+
+footer p{
+    font-size:10px;
+}
+
+footer{
+    background-color:#ffd6e0;
+    text-align:center;
+}
